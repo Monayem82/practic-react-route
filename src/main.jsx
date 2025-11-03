@@ -8,6 +8,7 @@ import Root from './components/Root/Root.jsx';
 import Home from './components/Home/Home.jsx';
 import About from './components/About/About.jsx';
 import PhotoDetails from './components/PhotoDetails/PhotoDetails.jsx';
+import HandleError from './components/HandleError/HandleError.jsx';
 
 
 const router = createBrowserRouter([
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       },
       {path:'about',Component:About}
     ]
+  },
+  {
+    path:'*',
+    Component:HandleError
   },
 ]);
 
